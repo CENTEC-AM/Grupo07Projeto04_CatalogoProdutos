@@ -1,1 +1,1 @@
-# Projeto Final - T‚cnicas de Programa‡Æo para Internet 
+# Projeto Final - Tï¿½cnicas de Programaï¿½ï¿½o para Internet
