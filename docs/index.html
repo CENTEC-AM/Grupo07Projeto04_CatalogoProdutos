@@ -16,14 +16,58 @@
 </head>
 <body>
     <!-- Cabeçalho da página -->
-     <header id="header-principal">
-        <!-- Conteúdo será adicionado por David -->
-     </header>
+    <header id="header-principal" class="bg-dark text-light py-3">
+        <div class="container">
+            <h1 class="m-0" style="font-family: 'Bebas Neue', sans-serif;">
+                Vinil & Cia
+            </h1>
+        </div>
+    </header>
 
-     <!-- Navegação -->
-        <nav id="navbar-principal">
-            <!-- Conteúdo será adicionado por David -->
-        </nav>
+    <!-- Navegação -->
+    <nav id="navbar-principal" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/icons/logo.svg" alt="Logo Vinil & Cia" width="38" height="38">
+                Vinil & Cia
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#listaProdutos">Catálogo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer-principal">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <button id="btnMostrarFavoritos" class="btn btn-outline-warning ms-3">
+                            Favoritos <span id="contadorFavoritos" class="badge bg-danger">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-5 text-center text-light" style="background: linear-gradient(135deg, #14110F, #1E1A16);">
+        <div class="container">
+            <h2 class="display-4" style="font-family: 'Bebas Neue', sans-serif;">
+                Cada disco tem um lado B pra contar.
+            </h2>
+
+            <p class="lead mt-3" style="font-family: 'Inter', sans-serif;">
+                Explore nosso catálogo digital de discos de vinil e descubra clássicos, raridades e novas tendências musicais.
+            </p>
+        </div>
+    </section>
 
         <!-- Conteúdo principal da página -->
          <main id="conteudo-principal" class="container my-4">
