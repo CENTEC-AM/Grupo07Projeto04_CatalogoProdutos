@@ -73,9 +73,49 @@
          <main id="conteudo-principal" class="container my-4">
 
             <!-- Barra de filtros -->
-             <section id="secao-filtros">
-                <!-- Conteúdo será adicionado por Marcelo -->
-             </section>
+            <section id="secao-filtros" class="bg-dark text-light p-3 rounded">
+                <div class="container">
+                    <form id="formFiltros" class="row g-3">
+                        <!-- Campo de pesquisa -->
+                        <div class="col-12 col-md-6">
+                            <label for="campoPesquisa" class="form-label">Pesquisar por título ou artista:</label>
+                            <input
+                                type="text"
+                                id="campoPesquisa"
+                                class="form-control"
+                                placeholder="Digite pelo menos 2 caracteres">
+                        </div>
+
+                        <!-- Filtro por categoria -->
+                        <div class="col-12 col-md-4">
+                            <label for="filtroCategoria" class="form-label">Categoria:</label>
+                            <select id="filtroCategoria" class="form-select">
+                                <option value="todas">Todas</option>
+                                <option value="rock">Rock</option>
+                                <option value="mpb">MPB</option>
+                                <option value="jazz">Jazz</option>
+                                <option value="pop">Pop</option>
+                                <option value="eletronica">Eletrônica</option>
+                            </select>
+                        </div>
+
+                        <!-- Botão limpar filtros -->
+                        <div class="col-12 col-md-2 d-flex align-items-end">
+                            <button id="btnLimparFiltros" type="button" class="btn btn-outline-light w-100">
+                                Limpar
+                            </button>
+                        </div>
+
+                        <!-- Contador de resultados -->
+                        <div class="col-12">
+                            <p class="mt-3">
+                                Resultados encontrados:
+                                <span id="contadorResultados">0</span>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </section>
 
              <!-- Grid de produtos -->
               <section id="listaProdutos" class="row mt-4">
