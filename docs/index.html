@@ -119,18 +119,88 @@
 
              <!-- Grid de produtos -->
               <section id="listaProdutos" class="row mt-4">
-                <!-- Conteúdo será adicionado por Pietro via JavaScript -->
+                <!-- Os cards serão inseridos automaticamente pelo JavaScript -->
               </section>
          </main>
 
          <!-- Modal de detalhes do produto -->
-          <div id="modalProduto">
-            <!-- Conteúdo será adicionado por Pietro -->
+<div class="modal fade" id="modalProduto" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-secondary">
+                  <h5 class="modal-title" id="modalTitulo">Título do Disco</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-12 col-md-4 text-center mb-3">
+                      <img id="modalImagem" src="" alt="Capa do Disco" class="img-fluid rounded">
+                    </div>
+
+                    <div class="col-12 col-md-8">
+                      <p><strong>Artista:</strong> <span id="modalArtista"></span></p>
+                      <p><strong>Categoria:</strong> <span id="modalCategoria"></span></p>
+                      <p><strong>Ano:</strong> <span id="modalAno"></span></p>
+                      <p><strong>Selo:</strong> <span id="modalSelo"></span></p>
+                      <p><strong>Faixas:</strong> <span id="modalFaixas"></span></p>
+                      <p><strong>Preço:</strong> R$ <span id="modalPreco"></span></p>
+
+                      <p class="mt-3">
+                        <strong>Descrição:</strong><br>
+                        <span id="modalDescricao"></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer border-secondary">
+                  <button id="btnFavoritarModal" class="btn btn-warning">
+                    Favoritar
+                  </button>
+                  <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">
+                    Fechar
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Rodapé da página -->
-           <footer id="footer-principal" class="mt-5">
-            <!-- Conteúdo será adicionado por Pietro -->
+           <footer id="footer-principal" class="bg-dark text-light py-4 mt-5">
+             <div class="container">
+               <div class="row">
+                 <div class="col-12 col-md-4 mb-3">
+                   <h4 style="font-family: 'Bebas Neue', sans-serif;">Vinil & Cia</h4>
+                   <p>Loja digital independente de discos de vinil. Manaus, AM.</p>
+                 </div>
+
+                 <div class="col-12 col-md-4 mb-3">
+                   <h5>Links</h5>
+                   <ul class="list-unstyled">
+                     <li><a href="#listaProdutos" class="text-light">Catálogo</a></li>
+                     <li><a href="#hero" class="text-light">Início</a></li>
+                     <li><a href="#secao-filtros" class="text-light">Filtros</a></li>
+                   </ul>
+                 </div>
+
+                 <div class="col-12 col-md-4 mb-3">
+                   <h5>Newsletter</h5>
+                   <form id="formNewsletter" novalidate>
+<label for="newsletterEmail" class="visually-hidden">Seu e-mail</label>
+<input id="newsletterEmail" name="email" type="email" class="form-control mb-2" placeholder="Seu e-mail" autocomplete="email" required>
+
+                     <button class="btn btn-warning w-100" type="submit">
+                       Inscrever-se
+                     </button>
+
+                     <p id="newsletterSucesso" class="text-success mt-2 d-none">
+                       Inscrição registrada!
+                     </p>
+                   </form>
+                 </div>
+               </div>
+             </div>
            </footer>
 
            <!-- Bootstrap JS -->
